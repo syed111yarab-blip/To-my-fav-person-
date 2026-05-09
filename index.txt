@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Hamsa</title>
+    <style>
+        body { 
+            background: #0d1117; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            padding: 20px;
+            margin: 0;
+        }
+        
+        /* This puts the name and moon together in the center */
+        .name-header {
+            font-size: 3rem; 
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #f0e68c; /* Golden/Moonlight color */
+            text-shadow: 0 0 15px rgba(240, 230, 140, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .moon-icon {
+            font-size: 3.5rem;
+            animation: moonPulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moonPulse {
+            from { transform: scale(1); filter: drop-shadow(0 0 5px #fff); }
+            to { transform: scale(1.1); filter: drop-shadow(0 0 20px #f0e68c); }
+        }
+
+        .container { 
+            border: 1px solid #30363d; 
+            border-radius: 20px; 
+            padding: 25px; 
+            background: #161b22; 
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+
+        img { 
+            width: 100%; 
+            border-radius: 15px; 
+            margin: 15px 0;
+            border: 1px solid #333;
+        }
+
+        .message { 
+            font-size: 1.2rem; 
+            line-height: 1.8; 
+            color: #e6edf3;
+            margin: 20px 0; 
+        }
+
+        .heart { color: #ff4d4d; font-size: 30px; animation: beat 1s infinite; display: inline-block; }
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .music-box {
+            margin-top: 30px; 
+            background: #0d1117; 
+            padding: 15px; 
+            border-radius: 50px;
+            border: 1px solid #30363d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="name-header">
+        HAMSA <span class="moon-icon">🌕</span>
+    </div>
+
+    <div class="container">
+        <h1 style="color: #ff79c6; font-size: 1.8rem;">Happy Birthday! 🎂</h1>
+        
+        <img src="img.png">
+        
+        <div class="message">
+            To My favourite person 🕊️💫<br>
+            I will always love u <span class="heart">❤️</span><br>
+            Hope u get a small smile on ur face 😊<br>
+            Hope u have a great day today! 😘
+        </div>
+
+        <img src="img2.png">
+
+        <div class="music-box">
+            <p style="font-size: 13px; margin-bottom: 8px; color: #8b949e;">🎵 Press Play for Music 🎵</p>
+            <audio controls style="width: 100%;">
+                <source src="aud.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
